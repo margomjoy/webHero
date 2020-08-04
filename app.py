@@ -24,7 +24,7 @@ import pandas as pd
 import json
 
 # Import your config file(s) and variable(s)
-if is_heroku == False:
+if is_heroku == True:
     from config import remote_db_endpoint, remote_db_port, remote_db_name, remote_db_user, remote_db_pwd
 else:
     remote_db_endpoint = os.environ.get('remote_db_endpoint')
